@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E2697301AEBDFA0000C2D9D /* BraintreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26972F1AEBDFA0000C2D9D /* BraintreeTest.swift */; };
+		2E33A5691AEC09FB00068093 /* JsonSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33A5681AEC09FB00068093 /* JsonSerializable.swift */; };
+		2E3E2CBE1AEC50BE0077AD35 /* BackendConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E2CBC1AEC50BE0077AD35 /* BackendConnector.swift */; };
+		2E3E2CC11AEC50F30077AD35 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E2CC01AEC50F30077AD35 /* LoginCredentials.swift */; };
+		2E477ACD1AECCB7B00E01C17 /* BackendConnectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E2CC21AEC573B0077AD35 /* BackendConnectorDelegate.swift */; };
+		A81864FBBF260F517CA3F81A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6940F1ED18428F2DC8CE3B8F /* libPods.a */; };
+		FA018DE61AEC741D009960AC /* Seeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA018DE51AEC741D009960AC /* Seeder.swift */; };
+		FA018DE81AEC7C26009960AC /* AuctionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA018DE71AEC7C26009960AC /* AuctionDetailsViewController.swift */; };
+		FA3D26A11AEBBAF90001B46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D26A01AEBBAF90001B46F /* AppDelegate.swift */; };
+		FA3D26A61AEBBAF90001B46F /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D26A51AEBBAF90001B46F /* SwipeViewController.swift */; };
+		FA3D26A91AEBBAF90001B46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3D26A71AEBBAF90001B46F /* Main.storyboard */; };
+		FA3D26AB1AEBBAF90001B46F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3D26AA1AEBBAF90001B46F /* Images.xcassets */; };
+		FA3D26AE1AEBBAF90001B46F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3D26AC1AEBBAF90001B46F /* LaunchScreen.xib */; };
+		FA3D26BA1AEBBAF90001B46F /* BattleHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D26B91AEBBAF90001B46F /* BattleHackTests.swift */; };
+		FA760D2E1AEBEE3C00CE8E39 /* DMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA760D2D1AEBEE3C00CE8E39 /* DMPageControl.m */; };
+		FA760D301AEBF12E00CE8E39 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D2F1AEBF12E00CE8E39 /* BuyViewController.swift */; };
+		FA760D321AEBF13F00CE8E39 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D311AEBF13F00CE8E39 /* CenterViewController.swift */; };
+		FA760D341AEBF14C00CE8E39 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D331AEBF14C00CE8E39 /* SellViewController.swift */; };
+		FA760D371AEBFE1B00CE8E39 /* AuctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D361AEBFE1B00CE8E39 /* AuctionTableViewCell.swift */; };
+		FA760D3C1AEC0A4B00CE8E39 /* NewAuctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D3B1AEC0A4B00CE8E39 /* NewAuctionViewController.swift */; };
+		FA760D3E1AEC1B2900CE8E39 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D3D1AEC1B2900CE8E39 /* ExtensionUIView.swift */; };
+		FA760D401AEC293200CE8E39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D3F1AEC293200CE8E39 /* LoginViewController.swift */; };
+		FA760D431AEC371800CE8E39 /* BuyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D421AEC371800CE8E39 /* BuyListViewController.swift */; };
+		FA760D451AEC372C00CE8E39 /* BuyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D441AEC372C00CE8E39 /* BuyMapViewController.swift */; };
+		FA760D471AEC3C8D00CE8E39 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA760D461AEC3C8D00CE8E39 /* MapKit.framework */; };
+		FA760D4D1AEC5E8900CE8E39 /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA760D4B1AEC5E8900CE8E39 /* Auction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA3D26B41AEBBAF90001B46F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3D26931AEBBAF90001B46F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3D269A1AEBBAF90001B46F;
+			remoteInfo = BattleHack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04C9548074A1ECBD8B14DBFE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2E26972F1AEBDFA0000C2D9D /* BraintreeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraintreeTest.swift; sourceTree = "<group>"; };
+		2E2697321AEBE9B2000C2D9D /* battlehack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "battlehack-Bridging-Header.h"; path = "../battlehack-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E33A5681AEC09FB00068093 /* JsonSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializable.swift; sourceTree = "<group>"; };
+		2E3E2CBC1AEC50BE0077AD35 /* BackendConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackendConnector.swift; path = ../../battlehack/BattleHack/BackendConnector.swift; sourceTree = "<group>"; };
+		2E3E2CBD1AEC50BE0077AD35 /* BraintreeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BraintreeExtension.swift; path = ../../battlehack/BattleHack/BraintreeExtension.swift; sourceTree = "<group>"; };
+		2E3E2CC01AEC50F30077AD35 /* LoginCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginCredentials.swift; path = ../../battlehack/BattleHack/LoginCredentials.swift; sourceTree = "<group>"; };
+		2E3E2CC21AEC573B0077AD35 /* BackendConnectorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendConnectorDelegate.swift; sourceTree = "<group>"; };
+		6940F1ED18428F2DC8CE3B8F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD02E850B42827D732AF084A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FA018DE51AEC741D009960AC /* Seeder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seeder.swift; sourceTree = "<group>"; };
+		FA018DE71AEC7C26009960AC /* AuctionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionDetailsViewController.swift; sourceTree = "<group>"; };
+		FA3D269B1AEBBAF90001B46F /* BattleHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3D269F1AEBBAF90001B46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3D26A01AEBBAF90001B46F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA3D26A51AEBBAF90001B46F /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		FA3D26A81AEBBAF90001B46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA3D26AA1AEBBAF90001B46F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA3D26AD1AEBBAF90001B46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FA3D26B31AEBBAF90001B46F /* BattleHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3D26B81AEBBAF90001B46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3D26B91AEBBAF90001B46F /* BattleHackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleHackTests.swift; sourceTree = "<group>"; };
+		FA760D2C1AEBEE3C00CE8E39 /* DMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPageControl.h; sourceTree = "<group>"; };
+		FA760D2D1AEBEE3C00CE8E39 /* DMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPageControl.m; sourceTree = "<group>"; };
+		FA760D2F1AEBF12E00CE8E39 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		FA760D311AEBF13F00CE8E39 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		FA760D331AEBF14C00CE8E39 /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
+		FA760D361AEBFE1B00CE8E39 /* AuctionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionTableViewCell.swift; sourceTree = "<group>"; };
+		FA760D3B1AEC0A4B00CE8E39 /* NewAuctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAuctionViewController.swift; sourceTree = "<group>"; };
+		FA760D3D1AEC1B2900CE8E39 /* ExtensionUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		FA760D3F1AEC293200CE8E39 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA760D421AEC371800CE8E39 /* BuyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyListViewController.swift; sourceTree = "<group>"; };
+		FA760D441AEC372C00CE8E39 /* BuyMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyMapViewController.swift; sourceTree = "<group>"; };
+		FA760D461AEC3C8D00CE8E39 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FA760D4B1AEC5E8900CE8E39 /* Auction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA3D26981AEBBAF90001B46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA760D471AEC3C8D00CE8E39 /* MapKit.framework in Frameworks */,
+				A81864FBBF260F517CA3F81A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3D26B01AEBBAF90001B46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B8859FA4A34B807B555D1BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA760D461AEC3C8D00CE8E39 /* MapKit.framework */,
+				6940F1ED18428F2DC8CE3B8F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E2697311AEBE221000C2D9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E3E2CBC1AEC50BE0077AD35 /* BackendConnector.swift */,
+				2E3E2CBD1AEC50BE0077AD35 /* BraintreeExtension.swift */,
+				2E3E2CC21AEC573B0077AD35 /* BackendConnectorDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B016594C85B63B696234C470 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD02E850B42827D732AF084A /* Pods.debug.xcconfig */,
+				04C9548074A1ECBD8B14DBFE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA3D26921AEBBAF90001B46F = {
+			isa = PBXGroup;
+			children = (
+				FA3D269D1AEBBAF90001B46F /* BattleHack */,
+				FA3D26B61AEBBAF90001B46F /* BattleHackTests */,
+				FA3D269C1AEBBAF90001B46F /* Products */,
+				B016594C85B63B696234C470 /* Pods */,
+				0B8859FA4A34B807B555D1BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA3D269C1AEBBAF90001B46F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA3D269B1AEBBAF90001B46F /* BattleHack.app */,
+				FA3D26B31AEBBAF90001B46F /* BattleHackTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA3D269D1AEBBAF90001B46F /* BattleHack */ = {
+			isa = PBXGroup;
+			children = (
+				2E2697321AEBE9B2000C2D9D /* battlehack-Bridging-Header.h */,
+				FA3D26A01AEBBAF90001B46F /* AppDelegate.swift */,
+				FA3D26A71AEBBAF90001B46F /* Main.storyboard */,
+				FA760D3F1AEC293200CE8E39 /* LoginViewController.swift */,
+				FA3D26A51AEBBAF90001B46F /* SwipeViewController.swift */,
+				FA760D311AEBF13F00CE8E39 /* CenterViewController.swift */,
+				FA760D361AEBFE1B00CE8E39 /* AuctionTableViewCell.swift */,
+				FA760D351AEBFDFA00CE8E39 /* Sell */,
+				FA760D411AEC370200CE8E39 /* Buy */,
+				FA018DE71AEC7C26009960AC /* AuctionDetailsViewController.swift */,
+				FA3D26AA1AEBBAF90001B46F /* Images.xcassets */,
+				FA3D26AC1AEBBAF90001B46F /* LaunchScreen.xib */,
+				FA760D381AEC009500CE8E39 /* Models */,
+				FA3D269E1AEBBAF90001B46F /* Supporting Files */,
+				FA760D2B1AEBEE2200CE8E39 /* Supporting Classes */,
+				2E2697311AEBE221000C2D9D /* Model */,
+			);
+			path = BattleHack;
+			sourceTree = "<group>";
+		};
+		FA3D269E1AEBBAF90001B46F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA3D269F1AEBBAF90001B46F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA3D26B61AEBBAF90001B46F /* BattleHackTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E26972F1AEBDFA0000C2D9D /* BraintreeTest.swift */,
+				FA3D26B91AEBBAF90001B46F /* BattleHackTests.swift */,
+				FA3D26B71AEBBAF90001B46F /* Supporting Files */,
+			);
+			path = BattleHackTests;
+			sourceTree = "<group>";
+		};
+		FA3D26B71AEBBAF90001B46F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA3D26B81AEBBAF90001B46F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA760D2B1AEBEE2200CE8E39 /* Supporting Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA760D3D1AEC1B2900CE8E39 /* ExtensionUIView.swift */,
+				FA760D2C1AEBEE3C00CE8E39 /* DMPageControl.h */,
+				FA760D2D1AEBEE3C00CE8E39 /* DMPageControl.m */,
+			);
+			name = "Supporting Classes";
+			sourceTree = "<group>";
+		};
+		FA760D351AEBFDFA00CE8E39 /* Sell */ = {
+			isa = PBXGroup;
+			children = (
+				FA760D331AEBF14C00CE8E39 /* SellViewController.swift */,
+				FA760D3B1AEC0A4B00CE8E39 /* NewAuctionViewController.swift */,
+			);
+			name = Sell;
+			sourceTree = "<group>";
+		};
+		FA760D381AEC009500CE8E39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA760D4B1AEC5E8900CE8E39 /* Auction.swift */,
+				2E3E2CC01AEC50F30077AD35 /* LoginCredentials.swift */,
+				2E33A5681AEC09FB00068093 /* JsonSerializable.swift */,
+				FA018DE51AEC741D009960AC /* Seeder.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FA760D411AEC370200CE8E39 /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				FA760D2F1AEBF12E00CE8E39 /* BuyViewController.swift */,
+				FA760D421AEC371800CE8E39 /* BuyListViewController.swift */,
+				FA760D441AEC372C00CE8E39 /* BuyMapViewController.swift */,
+			);
+			name = Buy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA3D269A1AEBBAF90001B46F /* BattleHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3D26BD1AEBBAF90001B46F /* Build configuration list for PBXNativeTarget "BattleHack" */;
+			buildPhases = (
+				590EA81870D4F87DA00A55E8 /* Check Pods Manifest.lock */,
+				FA3D26971AEBBAF90001B46F /* Sources */,
+				FA3D26981AEBBAF90001B46F /* Frameworks */,
+				FA3D26991AEBBAF90001B46F /* Resources */,
+				9427E2372261F61A0C60C8F6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BattleHack;
+			productName = BattleHack;
+			productReference = FA3D269B1AEBBAF90001B46F /* BattleHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA3D26B21AEBBAF90001B46F /* BattleHackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3D26C01AEBBAF90001B46F /* Build configuration list for PBXNativeTarget "BattleHackTests" */;
+			buildPhases = (
+				FA3D26AF1AEBBAF90001B46F /* Sources */,
+				FA3D26B01AEBBAF90001B46F /* Frameworks */,
+				FA3D26B11AEBBAF90001B46F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA3D26B51AEBBAF90001B46F /* PBXTargetDependency */,
+			);
+			name = BattleHackTests;
+			productName = BattleHackTests;
+			productReference = FA3D26B31AEBBAF90001B46F /* BattleHackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA3D26931AEBBAF90001B46F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Alexander Juda";
+				TargetAttributes = {
+					FA3D269A1AEBBAF90001B46F = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 3HF75TFRJF;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FA3D26B21AEBBAF90001B46F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = FA3D269A1AEBBAF90001B46F;
+					};
+				};
+			};
+			buildConfigurationList = FA3D26961AEBBAF90001B46F /* Build configuration list for PBXProject "BattleHack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA3D26921AEBBAF90001B46F;
+			productRefGroup = FA3D269C1AEBBAF90001B46F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3D269A1AEBBAF90001B46F /* BattleHack */,
+				FA3D26B21AEBBAF90001B46F /* BattleHackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3D26991AEBBAF90001B46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3D26A91AEBBAF90001B46F /* Main.storyboard in Resources */,
+				FA3D26AE1AEBBAF90001B46F /* LaunchScreen.xib in Resources */,
+				FA3D26AB1AEBBAF90001B46F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3D26B11AEBBAF90001B46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		590EA81870D4F87DA00A55E8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9427E2372261F61A0C60C8F6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA3D26971AEBBAF90001B46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA760D431AEC371800CE8E39 /* BuyListViewController.swift in Sources */,
+				FA018DE81AEC7C26009960AC /* AuctionDetailsViewController.swift in Sources */,
+				FA760D3E1AEC1B2900CE8E39 /* ExtensionUIView.swift in Sources */,
+				FA760D371AEBFE1B00CE8E39 /* AuctionTableViewCell.swift in Sources */,
+				FA760D401AEC293200CE8E39 /* LoginViewController.swift in Sources */,
+				FA3D26A61AEBBAF90001B46F /* SwipeViewController.swift in Sources */,
+				FA760D341AEBF14C00CE8E39 /* SellViewController.swift in Sources */,
+				FA760D2E1AEBEE3C00CE8E39 /* DMPageControl.m in Sources */,
+				FA760D321AEBF13F00CE8E39 /* CenterViewController.swift in Sources */,
+				FA760D4D1AEC5E8900CE8E39 /* Auction.swift in Sources */,
+				2E3E2CC11AEC50F30077AD35 /* LoginCredentials.swift in Sources */,
+				2E3E2CBE1AEC50BE0077AD35 /* BackendConnector.swift in Sources */,
+				FA3D26A11AEBBAF90001B46F /* AppDelegate.swift in Sources */,
+				FA760D3C1AEC0A4B00CE8E39 /* NewAuctionViewController.swift in Sources */,
+				FA760D451AEC372C00CE8E39 /* BuyMapViewController.swift in Sources */,
+				2E477ACD1AECCB7B00E01C17 /* BackendConnectorDelegate.swift in Sources */,
+				FA018DE61AEC741D009960AC /* Seeder.swift in Sources */,
+				2E33A5691AEC09FB00068093 /* JsonSerializable.swift in Sources */,
+				FA760D301AEBF12E00CE8E39 /* BuyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3D26AF1AEBBAF90001B46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E2697301AEBDFA0000C2D9D /* BraintreeTest.swift in Sources */,
+				FA3D26BA1AEBBAF90001B46F /* BattleHackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA3D26B51AEBBAF90001B46F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3D269A1AEBBAF90001B46F /* BattleHack */;
+			targetProxy = FA3D26B41AEBBAF90001B46F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA3D26A71AEBBAF90001B46F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA3D26A81AEBBAF90001B46F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA3D26AC1AEBBAF90001B46F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA3D26AD1AEBBAF90001B46F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA3D26BB1AEBBAF90001B46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA3D26BC1AEBBAF90001B46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA3D26BE1AEBBAF90001B46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD02E850B42827D732AF084A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BattleHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./battlehack-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		FA3D26BF1AEBBAF90001B46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C9548074A1ECBD8B14DBFE /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BattleHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./battlehack-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		FA3D26C11AEBBAF90001B46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BattleHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleHack.app/BattleHack";
+			};
+			name = Debug;
+		};
+		FA3D26C21AEBBAF90001B46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BattleHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleHack.app/BattleHack";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA3D26961AEBBAF90001B46F /* Build configuration list for PBXProject "BattleHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3D26BB1AEBBAF90001B46F /* Debug */,
+				FA3D26BC1AEBBAF90001B46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3D26BD1AEBBAF90001B46F /* Build configuration list for PBXNativeTarget "BattleHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3D26BE1AEBBAF90001B46F /* Debug */,
+				FA3D26BF1AEBBAF90001B46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3D26C01AEBBAF90001B46F /* Build configuration list for PBXNativeTarget "BattleHackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3D26C11AEBBAF90001B46F /* Debug */,
+				FA3D26C21AEBBAF90001B46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA3D26931AEBBAF90001B46F /* Project object */;
+}
