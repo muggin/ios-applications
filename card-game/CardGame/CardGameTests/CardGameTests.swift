@@ -1,15 +1,15 @@
 //
-//  DropitTests.swift
-//  DropitTests
+//  CardGameTests.swift
+//  CardGameTests
 //
-//  Created by Wojtek on 7/24/14.
-//  Copyright (c) 2014 Wojtek. All rights reserved.
+//  Created by Wojtek on 7/15/14.
+//
 //
 
 import UIKit
 import XCTest
 
-class DropitTests: XCTestCase {
+class CardGameTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
