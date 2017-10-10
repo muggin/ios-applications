@@ -26,11 +26,11 @@ Application displaying the newest Flickr images based on a geographic location.
 ### Card Game
 Card matching games based on Stanford's CS 193p course
 
-#### Todo App
+### Todo App
 ToDo application for iOS based on the CoreData tutorial from Tuts+
 
-#### Shutterbug
+### Shutterbug
 Application displaying the newest Flickr images based on a given keyword.
 
-#### Bluetooth Messenger
+### Bluetooth Messenger
 Bluetooth based chat.
